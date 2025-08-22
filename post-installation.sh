@@ -121,7 +121,7 @@ polkit.addRule(function(action, subject) {
 });
 EOF'
 
-systemctl --user stop gamemoded.service
+systemctl --user start gamemoded.service
 
 ## Changing default zsh path config
 echo "ZDOTDIR=$HOME/.config/zsh" | sudo tee /etc/zsh/zshenv
